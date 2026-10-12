@@ -1,0 +1,9 @@
+# Dependencies & builds
+node_modules/
+web/dist/
+.wrangler/
+.dev.vars
+
+# Misc
+*.log
+.DS_Store

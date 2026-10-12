@@ -1,0 +1,14 @@
+# LOCAL DEVELOPMENT SECRETS ONLY (wrangler dev reads .dev.vars automatically).
+# Copy this file to `.dev.vars` for local development. NEVER commit .dev.vars.
+# For production, use `npx wrangler secret put NAME` instead — Cloudflare stores
+# secrets encrypted; they are never visible in the dashboard, in git, or in frontend code.
+
+# One-time token required to create the FIRST administrator at /setup (>= 16 chars).
+# Generate your own, e.g.:  openssl rand -hex 24   (or any random string on your phone)
+ADMIN_BOOTSTRAP_TOKEN=change-me-to-a-long-random-string
+
+# Only after written NumberOTP reseller approval — leave unset until then:
+# NUMBEROTP_API_KEY=
+
+# Only after a payment provider is selected — leave unset until then:
+# PAYMENT_WEBHOOK_SECRET=
